@@ -1,4 +1,4 @@
-# DAN (sample not ready version)
+# DAN (sample not ready product)
 
 ## Project DEMO
 
