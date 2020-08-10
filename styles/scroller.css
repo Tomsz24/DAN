@@ -1,0 +1,27 @@
+.scroller__navigation {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.scroller__navigation ul li {
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  transform: translateX(200px);
+  transition: .4s;
+}
+
+.scroller__navigation ul li.active {
+  /* background-color: blue; */
+  color: white;
+  transform: translateX(15px);
+}
+
+.scroller__navigation ul li:hover {
+  transform: translateX(15px);
+}
+
+
+

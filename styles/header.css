@@ -1,0 +1,74 @@
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(7,148,237,1) 0%, rgba(0,83,255,1) 100%);
+  z-index: -1;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 10% 2fr 1fr 10%;
+  min-height: 10vh;
+  color: white;
+  align-items: center;
+  /* margin-top: 50px; */
+}
+
+#logo {
+  grid-column: 2/3;
+  font-size: 48px;
+  text-shadow: 4px 3px 3px black;
+}
+
+.fas {
+  justify-self: end;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+section {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.cars {
+  height: 60%;
+  width: 100%;
+  position: relative;
+}
+
+.cars img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.headline {
+  position: absolute;
+  top: 85%;
+  left: 40%;
+  font-size: 100px;
+  transform: translate(-20%, -70%);
+  color: white;
+  z-index: 3;
+}
+
+.cars::after {
+  content: "";
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: .3;
+}
+
+.cars .mainImg{
+  width: 80%;
+}
